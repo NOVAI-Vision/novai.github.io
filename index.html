@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap');
-        body { font-family: 'Pretendard', sans-serif; }
+        body { font-family: 'Pretendard', sans-serif; scroll-behavior: smooth; }
         .hero-gradient { background: linear-gradient(135deg, #020617 0%, #0f172a 100%); }
         .card-blur { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
@@ -18,7 +18,7 @@
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center">
-                <img src="./KakaoTalk_20250924_141231091.jpg" alt="NOVAI Logo" class="h-12 w-auto object-contain">
+                <img src="./KakaoTalk_20250924_141231091.jpg" alt="NOVAI Logo" class="h-10 w-auto object-contain">
             </div>
             <div class="hidden md:flex space-x-10 font-semibold text-slate-600">
                 <a href="#tech" class="hover:text-blue-600 transition">핵심기술</a>
@@ -46,65 +46,37 @@
         </div>
     </section>
 
-    <section id="tech" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-12">
-            <div class="p-8 bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
-                <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
-                    <i class="fas fa-microchip text-2xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Edge AI 분석</h3>
-                <p class="text-slate-500 leading-relaxed">현장 서버에서 즉각적으로 판단하여 초저지연 실시간 관제 서비스를 제공합니다.</p>
-            </div>
-            <div class="p-8 bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
-                <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 mb-6">
-                    <i class="fas fa-layer-group text-2xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">멀티모달 융합</h3>
-                <p class="text-slate-500 leading-relaxed">RGB 영상과 열화상, LiDAR 데이터를 결합하여 전천후 탐지 성능을 보장합니다.</p>
-            </div>
-            <div class="p-8 bg-white rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100">
-                <div class="w-14 h-14 bg-indigo-100 rounded-2xl flex items-center justify-center text-indigo-600 mb-6">
-                    <i class="fas fa-brain text-2xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">RAG 기반 대응</h3>
-                <p class="text-slate-500 leading-relaxed">AI가 감지된 상황을 분석하고 과거 데이터를 기반으로 최적의 대응 시나리오를 제시합니다.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="performance" class="py-24 px-6 bg-slate-900 text-white">
+    <section id="performance" class="py-24 px-6 bg-slate-900 text-white border-t border-slate-800">
         <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div>
-                    <h2 class="text-4xl font-bold mb-4 italic">Core Projects</h2>
-                    <p class="text-slate-400 text-lg">NOVAI의 독보적인 Vision AI 기술 실적입니다.</p>
-                </div>
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold mb-4 italic text-blue-400">Core Projects</h2>
+                <p class="text-slate-400 text-lg font-light">NOVAI가 보유한 독보적인 비전 AI 분석 기술 실적입니다.</p>
             </div>
             
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="card-blur p-10 rounded-3xl">
-                    <div class="inline-block px-4 py-1 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold mb-6">Energy Infrastructure</div>
+                <div class="card-blur p-10 rounded-3xl hover:border-blue-500/50 transition-colors">
+                    <div class="inline-block px-4 py-1 rounded-full bg-blue-500/20 text-blue-400 text-sm font-bold mb-6">Industrial Inspection</div>
                     <h3 class="text-2xl font-bold mb-4 leading-tight">LNG 멤브레인 탱크<br>비파괴 결함 탐지 시스템</h3>
                     <p class="text-slate-400 mb-8 leading-relaxed">
                         탱크 내부의 미세 크랙, 주름, 변형을 AI로 자동 검출합니다. 
-                        고해상도 영상 분석을 통해 인간의 눈으로 확인하기 어려운 미세 결함까지 탐지하여 대형 사고를 미연에 방지합니다.
+                        고해상도 영상 분석을 통해 인간의 눈으로 확인하기 어려운 결함까지 탐지하여 점검 시간을 단축하고 대형 사고를 미연에 방지합니다.
                     </p>
-                    <div class="flex gap-4 text-sm font-bold">
-                        <span class="text-emerald-400"><i class="fas fa-check-double mr-2"></i>자동 검출 알고리즘</span>
-                        <span class="text-emerald-400"><i class="fas fa-check-double mr-2"></i>유지보수 효율 300% 향상</span>
+                    <div class="flex flex-wrap gap-4 text-sm font-bold">
+                        <span class="text-emerald-400"><i class="fas fa-check-circle mr-2"></i>미세결함 탐지 최적화</span>
+                        <span class="text-emerald-400"><i class="fas fa-check-circle mr-2"></i>AI 비파괴 검사 솔루션</span>
                     </div>
                 </div>
 
-                <div class="card-blur p-10 rounded-3xl">
+                <div class="card-blur p-10 rounded-3xl hover:border-emerald-500/50 transition-colors">
                     <div class="inline-block px-4 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold mb-6">Smart City & Safety</div>
-                    <h3 class="text-2xl font-bold mb-4 leading-tight">지능형 다목적<br>안전·교통 관제 솔루션</h3>
+                    <h3 class="text-2xl font-bold mb-4 leading-tight">멀티모달 기반<br>안전·교통 통합 관제</h3>
                     <p class="text-slate-400 mb-8 leading-relaxed">
-                        C-ITS 연동을 통한 도로 위 돌발 상황 감지 및 스마트시티 통합 관제 플랫폼을 운영합니다. 
-                        낙하물 감지, 역주행, 화재 감지 등 다양한 시나리오에 즉각 대응합니다.
+                        C-ITS 연동 도로 상황 분석 및 스마트시티 관제 플랫폼입니다. 
+                        낙하물, 역주행, 화재 등 돌발 상황을 실시간으로 감지하여 도시 안전망을 고도화합니다.
                     </p>
-                    <div class="flex gap-4 text-sm font-bold">
-                        <span class="text-blue-400"><i class="fas fa-check-double mr-2"></i>24/7 실시간 모니터링</span>
-                        <span class="text-blue-400"><i class="fas fa-check-double mr-2"></i>정확도 98.5% 달성</span>
+                    <div class="flex flex-wrap gap-4 text-sm font-bold">
+                        <span class="text-blue-400"><i class="fas fa-check-circle mr-2"></i>정확도 98% 이상의 실시간 감지</span>
+                        <span class="text-blue-400"><i class="fas fa-check-circle mr-2"></i>멀티모달 센서 융합 기술</span>
                     </div>
                 </div>
             </div>
@@ -113,20 +85,39 @@
 
     <footer id="contact" class="bg-white py-20 px-6 border-t border-slate-200">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
-            <div class="max-w-md">
+            <div class="max-w-2xl">
                 <img src="./KakaoTalk_20250924_141231091.jpg" alt="NOVAI Logo" class="h-10 mb-8">
-                <p class="text-slate-500 mb-8 leading-relaxed">
-                    노바아이(NOVAI)는 멀티모달 Vision AI 기술로 가장 안전한 미래를 만듭니다.<br>
-                    대표이사 : 곽상신
-                </p>
-                <div class="space-y-3">
-                    <p class="flex items-center text-slate-700 font-medium"><i class="fas fa-envelope w-8 text-blue-600"></i> contact@novai-vision.com</p>
-                    <p class="flex items-center text-slate-700 font-medium"><i class="fas fa-map-marker-alt w-8 text-blue-600"></i> 대한민국 경기도 (본사)</p>
+                <h4 class="text-xl font-bold mb-4">노바아이(NOVAI)</h4>
+                <div class="space-y-3 text-slate-600">
+                    <p class="flex items-start gap-3">
+                        <i class="fas fa-map-marker-alt text-blue-600 mt-1"></i>
+                        <span>경기도 고양시 일산동구 동국로 32, 354호<br>(식사동, 동국대학교 산학협력관)</span>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fas fa-envelope text-blue-600"></i>
+                        <a href="mailto:ssangsshin@naver.com" class="hover:text-blue-600">ssangsshin@naver.com</a>
+                    </p>
+                    <p class="flex items-center gap-3">
+                        <i class="fas fa-user-tie text-blue-600"></i>
+                        <span>대표이사 곽상신</span>
+                    </p>
                 </div>
             </div>
+            
             <div class="w-full md:w-auto min-w-[350px] bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                <h4 class="text-xl font-bold mb-6">솔루션 문의</h4>
+                <h4 class="text-lg font-bold mb-6 italic text-slate-800 tracking-wider">CONTACT US</h4>
                 <form class="space-y-4">
-                    <input type="text" placeholder="성함/기업명" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <input type="email" placeholder="이메일 주소" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                    <textarea placeholder="문의 내용을 입력하세요" rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline
+                    <input type="text" placeholder="성함/기업명" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none">
+                    <input type="email" placeholder="이메일 주소" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none">
+                    <textarea placeholder="프로젝트 문의 내용을 입력하세요" rows="4" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+                    <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/20">문의 제출하기</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-slate-100 text-center text-slate-400 text-sm">
+            © 2026 NOVAI. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
